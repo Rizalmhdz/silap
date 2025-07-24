@@ -1,0 +1,77 @@
+{
+    "laporan" : [
+        {
+            "nama" : "go-laporRumDisGub",
+            "deskripsi" : "Laporan untuk Penjagaan Rumah Dinas Gubernur Kalimantan Selatan",
+            "waktu" : null,
+            "admin" : "Max Noor Zaini, S.E.",
+            "passcode" : "1234",
+            "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
+
+        },
+        {
+            "nama" : "Go-Kada",
+            "deskripsi" : "Laporan Penjagaan dan Pengamanan Gubernur Kalimantan Selatan",
+            "waktu" : null,
+            "admin" : "Gilang Perdana Putra, S.E.",
+            "passcode" : "1234",
+            "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
+
+        },
+        {
+            "nama" : "Laporan Kegiatan Regu Jaga",
+            "deskripsi" : "Formulir pelaporan regu jaga polisi Pamong praja bidang Tibumtranmas",
+            "waktu" : null,
+            "admin" : "Satrio Dwi Cahyo",
+            "passcode" : "",
+            "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
+
+        },
+        {
+            "nama" : "Pengajuan Surat Perintah Tugas",
+            "deskripsi" : "Formulir pengajuan SPT polisi Pamong praja bidang Tibumtranmas",
+            "waktu" : null,
+            "admin" : "Destia Syawaliza",
+            "passcode" : "",
+            "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
+
+        },
+        {
+            "nama" : "Monitoring Kehadiran Anggota Penjagaan",
+            "deskripsi" : "Formulir penjagaan polisi Pamong praja bidang Tibumtranmas",
+            "waktu" : null,
+            "admin" : "Muhammad Nasri",
+            "passcode" : "",
+            "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
+
+        },
+        {
+            "nama" : "Laporan Pengendalian Massa",
+            "deskripsi" : "Formulir penjagaan polisi Pamong praja bidang Tibumtranmas",
+            "waktu" : null,
+            "admin" : "Muhammad Rizal, S.Kom",
+            "passcode" : "",
+            "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
+
+        }
+    ],
+
+    "lainnya" : [
+        {
+            "nama" : "",
+            "deskripsi" : ""
+        },
+        {
+            "nama" : "",
+            "deskripsi" : ""
+        },
+        {
+            "nama" : "",
+            "deskripsi" : ""
+        }
+    ],
+
+    "info" : {
+
+    }
+}

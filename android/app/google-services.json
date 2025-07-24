@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "162591583298",
+    "firebase_url": "https://silap-7c845-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "silap-7c845",
+    "storage_bucket": "silap-7c845.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162591583298:android:6116ef1df9dee7aa7e91db",
+        "android_client_info": {
+          "package_name": "com.crimson.praja.manajemen_form_pelaporan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArWSg1bERKOakSh3XO9IsKvtuewDI4ojg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162591583298:android:3a7a36483911d3477e91db",
+        "android_client_info": {
+          "package_name": "com.crimson.silap.praja.silap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArWSg1bERKOakSh3XO9IsKvtuewDI4ojg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
