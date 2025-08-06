@@ -1,3 +1,4 @@
+import 'package:alarm/alarm.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:silap/firebase_options.dart';
@@ -11,9 +12,8 @@ Future<void> main()  async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  // await Alarm.init();
+  await Alarm.init();
   // tz.initializeTimeZones();
-  runApp(const MyApp());
   runApp(const MyApp());
   // await Firebase.initializeApp(); // Pastikan konfigurasi firebase sudah di-
   // await NotificationService.init(); // inisialisasi notifikasi

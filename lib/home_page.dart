@@ -1,9 +1,19 @@
+import 'dart:async';
+
+import 'package:alarm/alarm.dart';
+import 'package:alarm/model/alarm_settings.dart';
+import 'package:alarm/utils/alarm_set.dart';
 import 'package:flutter/material.dart';
+import 'package:silap/screens/edit_alarm.dart';
+import 'package:silap/screens/ring.dart';
+import 'package:silap/services/notifications.dart';
 // import 'package:intl/intl.dart';
 // import 'package:timezone/browser.dart' as tz;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+const version = '5.1.4';
 
 class HomePage extends StatefulWidget {
   @override
@@ -16,12 +26,82 @@ class _HomePageState extends State<HomePage> {
 
   List<Map<String, dynamic>> laporanItems = [];
   bool isLoading = true;
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+
+    // Navigasi sesuai index
+    switch (index) {
+      case 0:
+        Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));
+        break;
+      case 1:
+        Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));
+        break;
+      case 2:
+        Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));
+        break;
+    }
+  }
+
+
+  List<AlarmSettings> alarms = [];
+  Notifications? notifications;
+
+  static StreamSubscription<AlarmSet>? ringSubscription;
+  static StreamSubscription<AlarmSet>? updateSubscription;
 
   @override
   void initState() {
     super.initState();
     _initializeNotifications();
     _fetchMenuItems();
+  }
+
+  Future<void> loadAlarms() async {
+    final updatedAlarms = await Alarm.getAlarms();
+    updatedAlarms.sort((a, b) => a.dateTime.isBefore(b.dateTime) ? 0 : 1);
+    setState(() {
+      alarms = updatedAlarms;
+    });
+  }
+
+  Future<void> ringingAlarmsChanged(AlarmSet alarms) async {
+    if (alarms.alarms.isEmpty) return;
+    await Navigator.push(
+      context,
+      MaterialPageRoute<void>(
+        builder: (context) =>
+            ExampleAlarmRingScreen(alarmSettings: alarms.alarms.first),
+      ),
+    );
+    unawaited(loadAlarms());
+  }
+
+  Future<void> navigateToAlarmScreen(AlarmSettings? settings) async {
+    final res = await showModalBottomSheet<bool?>(
+      context: context,
+      isScrollControlled: true,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      builder: (context) {
+        return FractionallySizedBox(
+          heightFactor: 0.85,
+          child: ExampleAlarmEditScreen(alarmSettings: settings),
+        );
+      },
+    );
+
+    if (res != null && res == true) unawaited(loadAlarms());
+  }
+
+  Future<void> launchReadmeUrl() async {
+    final url = Uri.parse('https://pub.dev/packages/alarm/versions/$version');
+    await launchUrl(url);
   }
 
   void _initializeNotifications() async {
@@ -223,7 +303,7 @@ class _HomePageState extends State<HomePage> {
                                       children: [
                                         IconButton(
                                           icon: Icon(Icons.alarm_add, color: Colors.brown),
-                                          onPressed: () => _showReminderDialog(item['nama']),
+                                          onPressed: () => navigateToAlarmScreen(null),
                                         ),
                                         ElevatedButton.icon(
                                           icon: Icon(Icons.open_in_new, color: Colors.white,),
@@ -291,9 +371,11 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
         selectedItemColor: Colors.brown[400],
         unselectedItemColor: Colors.grey[400],
         backgroundColor: Colors.white,
+        onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Laporan'),
           BottomNavigationBarItem(icon: Icon(Icons.notifications), label: 'Pengingat'),
