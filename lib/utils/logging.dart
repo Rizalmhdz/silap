@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:intl/intl.dart';
 import 'package:logging/logging.dart';
 
-/// Sets up the logging system.
 void setupLogging({required bool showDebugLogs}) {
   if (showDebugLogs) {
     EquatableConfig.stringify = true;
@@ -15,11 +14,13 @@ void setupLogging({required bool showDebugLogs}) {
   final formatter = DateFormat('HH:mm:ss.SSS');
 
   Logger.root.onRecord.listen((record) {
-    debugPrint('\x1B${record.level.colorCode()}'
-        '[${record.level.name.substring(0, 1)}] '
-        '${formatter.format(record.time)}: '
-        '[${record.loggerName}] ${record.message}'
-        '\x1B[0m');
+    debugPrint(
+      '\x1B${record.level.colorCode()}'
+      '[${record.level.name.substring(0, 1)}] '
+      '${formatter.format(record.time)}: '
+      '[${record.loggerName}] ${record.message}'
+      '\x1B[0m',
+    );
     if (record.error != null) {
       debugPrint('Error object: ${record.error}');
     }

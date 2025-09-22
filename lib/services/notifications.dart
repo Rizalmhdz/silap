@@ -9,6 +9,7 @@ class Notifications {
   Notifications() {
     init();
   }
+
   static const _iosCategoryId = 'sample_category';
   static final _log = Logger('Notifications');
 

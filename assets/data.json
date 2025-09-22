@@ -4,18 +4,36 @@
             "nama" : "go-laporRumDisGub",
             "deskripsi" : "Laporan untuk Penjagaan Rumah Dinas Gubernur Kalimantan Selatan",
             "waktu" : null,
-            "admin" : "Max Noor Zaini, S.E.",
-            "passcode" : "1234",
-            "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
+            "admin" : "Max Noor Zaini, SE",
+            "passcode" : null,
+            "link" : "https://bit.ly/Go-LaPikRumDisGub"
 
         },
         {
-            "nama" : "Go-Kada",
-            "deskripsi" : "Laporan Penjagaan dan Pengamanan Gubernur Kalimantan Selatan",
+            "nama" : "SILAKI",
+            "deskripsi" : "Sistem Informasi laporan Kegiatan Instansi",
             "waktu" : null,
-            "admin" : "Gilang Perdana Putra, S.E.",
-            "passcode" : "1234",
-            "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
+            "admin" : "Satrio Dwi Cahyo",
+            "passcode" : null,
+            "link" : "https://bit.ly/SILAKI_SistemInformasiLaporanKegiatanInstansi"
+
+        },
+        {
+            "nama" : "GoFo Surat Masuk",
+            "deskripsi" : "Register surat masuk Satpol PP kalsel Bidang Ketertiban umum dan Ketentraman Masyarakat",
+            "waktu" : null,
+            "admin" : "Muhammmad Lutfi Firdaus, S.E.",
+            "passcode" : "1111",
+            "link" : "https://docs.google.com/forms/d/e/1FAIpQLSezwQ4ee1n3SN5ipQRdx-b_o9kOzh_Fgiw55EwE2jqyllXzxg/viewform?usp=sharing&ouid=114049749349325425800"
+
+        },
+        {
+            "nama" : "GoFo Surat Keluar",
+            "deskripsi" : "Register surat keluar Satpol PP kalsel Bidang Ketertiban umum dan Ketentraman Masyarakat",
+            "waktu" : null,
+            "admin" : "Muhammmad Lutfi Firdaus, S.E.",
+            "passcode" : "0000",
+            "link" : "https://docs.google.com/forms/d/e/1FAIpQLSegbZXNS9qWH-FosDCTOnNWhruzaJrR5YPtonvZYMnoS1v8yQ/viewform?usp=sharing&ouid=114049749349325425800"
 
         },
         {
@@ -28,46 +46,54 @@
 
         },
         {
-            "nama" : "Pengajuan Surat Perintah Tugas",
-            "deskripsi" : "Formulir pengajuan SPT polisi Pamong praja bidang Tibumtranmas",
-            "waktu" : null,
-            "admin" : "Destia Syawaliza",
-            "passcode" : "",
-            "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
-
-        },
-        {
-            "nama" : "Monitoring Kehadiran Anggota Penjagaan",
-            "deskripsi" : "Formulir penjagaan polisi Pamong praja bidang Tibumtranmas",
+            "nama" : "Form Absensi regu penjagaan",
+            "deskripsi" : "Absensi untuk Regu Penjagaan di Lingkungan Satpol PP Prov Kalsel",
             "waktu" : null,
             "admin" : "Muhammad Nasri",
-            "passcode" : "",
+            "passcode" : null,
             "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
 
         },
         {
-            "nama" : "Laporan Pengendalian Massa",
-            "deskripsi" : "Formulir penjagaan polisi Pamong praja bidang Tibumtranmas",
+            "nama" : "SiPentas",
+            "deskripsi" : "Sistem Penerbitan Surat Perintah Tugas",
             "waktu" : null,
-            "admin" : "Muhammad Rizal, S.Kom",
-            "passcode" : "",
+            "admin" : "Destia Syawaliza.",
+            "passcode" : null,
             "link" : "https://forms.gle/U5pX9D3ZHSWqKtVN8"
+        },
+        {
+            "nama" : "Go-Kada",
+            "deskripsi" : "Laporan Pengamanan Pengawalan Kepala daerah",
+            "waktu" : null,
+            "admin" : "GILANG PERDANA PUTRA, S.E.",
+            "passcode" : null,
+            "link" : "https://docs.google.com/forms/d/e/1FAIpQLSftmhY_mPIX1R521g3zZ4QZi-1aqQcUoRlGDcT-d5hNNBH8gA/viewform?usp=header"
 
         }
     ],
 
     "lainnya" : [
+
         {
-            "nama" : "",
-            "deskripsi" : ""
+            "nama" : "Pedoman Kepatuhan berpakian dan beratribut",
+            "deskripsi" : "Buku Pedoman Kepatuhan berpakian dan beratribut",
+            "tipe" : 0,
+            "waktu" : null,
+            "admin" : "Rahmadi Suryo Kuncoro, S.E.",
+            "passcode" : null,
+            "link" : "https://drive.google.com/file/d/1m-47XfQTlKSlfalx3qQk-tekfTAJK01p/view?usp=drive_link"
+
         },
         {
-            "nama" : "",
-            "deskripsi" : ""
-        },
-        {
-            "nama" : "",
-            "deskripsi" : ""
+            "nama" : "Buku Saku Satpol PP",
+            "deskripsi" : "Buku Saku Satpol PP",
+            "tipe" : 0,
+            "waktu" : null,
+            "admin" : "Maulana Zuhri Wardhani, S.H.",
+            "passcode" : null,
+            "link" : "https://drive.google.com/file/d/1m-47XfQTlKSlfalx3qQk-tekfTAJK01p/view?usp=drive_link"
+
         }
     ],
 

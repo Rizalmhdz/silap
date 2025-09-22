@@ -54,7 +54,8 @@ class DefaultFirebaseOptions {
     appId: '1:162591583298:android:3a7a36483911d3477e91db',
     messagingSenderId: '162591583298',
     projectId: 'silap-7c845',
-    databaseURL: 'https://silap-7c845-default-rtdb.asia-southeast1.firebasedatabase.app',
+    databaseURL:
+        'https://silap-7c845-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'silap-7c845.firebasestorage.app',
   );
 
@@ -63,9 +64,9 @@ class DefaultFirebaseOptions {
     appId: '1:162591583298:ios:4024cd9f2e99459c7e91db',
     messagingSenderId: '162591583298',
     projectId: 'silap-7c845',
-    databaseURL: 'https://silap-7c845-default-rtdb.asia-southeast1.firebasedatabase.app',
+    databaseURL:
+        'https://silap-7c845-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'silap-7c845.firebasestorage.app',
     iosBundleId: 'com.crimson.silap.praja.silap',
   );
-
 }
